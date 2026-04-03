@@ -51,7 +51,7 @@
 
 - **HTML5 + Tailwind CSS** (CDN)
 - **jQuery**
-- **Leaflet.js** (지도, 마커, GeoJSON)
+- **Leaflet.js** (지도, 마커, GeoJSON) GeoJSON [https://raw.githubusercontent.com/datasets/geo-boundaries-world-110m/master/countries.geojson]
 - **REST Countries API** (v3.1) [https://restcountries.com/]
 - **Frankfurter API** (환율) [https://frankfurter.dev/]
 - **로컬스토리지** (즐겨찾기 저장)
