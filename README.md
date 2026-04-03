@@ -6,7 +6,7 @@
   </p>
 
   <p>
-    <a href="https://country-explorer.vercel.app/">
+    <a href="https://country-explorer-gyulo94.vercel.app/">
       <img src="https://img.shields.io/badge/바로_체험하기-black?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Demo">
     </a>
     &nbsp;
@@ -59,7 +59,7 @@
 
 ### 🚀 바로 체험하기
 
-**[국가 탐색기 데모](https://country-explorer.vercel.app/)**
+**[국가 탐색기 데모](https://country-explorer-gyulo94.vercel.app/)**
 
 ### 설치 & 로컬 실행
 
