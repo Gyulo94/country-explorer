@@ -22,7 +22,17 @@ function renderCountryList(countries) {
   });
 
   $("#countryList").html(allCountriesListHtml);
-  $("#favoritesList").html(favCountriesListHtml);
+  if (favCountries.length === 0) {
+    $("#favoritesList").html(`
+      <div class="col-span-full py-12 text-center">
+        <div class="text-5xl mb-4 text-gray-300">⭐</div>
+        <p class="text-gray-500 text-lg">즐겨찾기한 국가가 없습니다</p>
+        <p class="text-gray-400 text-sm mt-2">국가 카드의 별 버튼을 눌러 즐겨찾기에 추가해보세요</p>
+      </div>
+    `);
+  } else {
+    $("#favoritesList").html(favCountriesListHtml);
+  }
 }
 
 /**
@@ -41,7 +51,7 @@ function createCountryCard(country, isFavorite) {
   );
 
   const starIcon = isFavorite
-    ? `<span class="text-yellow-400 font-bold text-4xl drop-shadow">★</span>`
+    ? `<span class="text-yellow-400 font-bold text-4xl drop-shadow">⭐</span>`
     : `<span class="text-gray-700 font-bold hover:text-yellow-400 text-4xl transition-colors">☆</span>`;
 
   return `
