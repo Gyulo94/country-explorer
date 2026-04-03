@@ -321,6 +321,7 @@ function startCardFollowing() {
  * - 이미 생성된 지도가 있다면 크기 재조정 및 초기 뷰로 복원
  */
 function showWorldMap() {
+  disableBodyScroll();
   $("#worldMapModal").removeClass("hidden");
 
   if (!worldMapInstance) {
@@ -336,6 +337,7 @@ function showWorldMap() {
  * - 모달을 숨기고, 관련된 호버 카드와 국경 하이라이트를 정리
  */
 function closeWorldMap() {
+  enableBodyScroll();
   $("#worldMapModal").addClass("hidden");
   if (worldMapInstance) {
     hideCard();
