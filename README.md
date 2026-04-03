@@ -52,8 +52,8 @@
 - **HTML5 + Tailwind CSS** (CDN)
 - **jQuery**
 - **Leaflet.js** (지도, 마커, GeoJSON)
-- **REST Countries API** (v3.1)
-- **Frankfurter API** (환율)
+- **REST Countries API** (v3.1) [https://restcountries.com/]
+- **Frankfurter API** (환율) [https://frankfurter.dev/]
 - **로컬스토리지** (즐겨찾기 저장)
 - **배포**: Vercel
 
