@@ -12,7 +12,7 @@
     />
     <link rel="stylesheet" href="./css/global.css" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
   </head>
   <body class="bg-gray-50 min-h-screen pb-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 py-8">
@@ -86,15 +86,6 @@
         class="w-full px-6 py-4 text-lg border border-gray-300 rounded-2xl focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-100 mb-8"
       />
 
-      <div id="loading" class="hidden flex justify-center items-center py-20">
-        <div
-          class="animate-spin rounded-full h-12 w-12 border-t-4 border-b-4 border-blue-500"
-        ></div>
-        <span class="ml-4 text-lg text-gray-600"
-          >국가 정보를 불러오는 중...</span
-        >
-      </div>
-
       <div id="favoritesSection" class="mb-8">
         <h3 class="flex items-center gap-2 text-lg font-semibold mb-4">
           즐겨찾기
@@ -104,10 +95,18 @@
           class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
         ></div>
       </div>
-
       <h3 class="flex items-center gap-2 text-lg font-semibold mb-4">
         국가목록
       </h3>
+      <div id="loading" class="hidden flex justify-center items-center py-20">
+        <div
+          class="animate-spin rounded-full h-12 w-12 border-t-4 border-b-4 border-blue-500"
+        ></div>
+        <span class="ml-4 text-lg text-gray-600"
+          >국가 정보를 불러오는 중...</span
+        >
+      </div>
+
       <div
         id="countryList"
         class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
@@ -125,14 +124,22 @@
         <div
           class="sticky top-0 z-[1200] bg-white w-full max-w-5xl flex justify-between items-center border-b px-6 py-5"
         >
-          <h2
-            id="modalCountryName"
-            class="text-2xl font-bold text-gray-800"
-          ></h2>
+          <div class="flex items-center gap-2">
+            <button
+              id="favoriteBtn"
+              class="text-2xl transition-colors hover:scale-110"
+            ></button>
+            <h2
+              id="modalCountryName"
+              class="text-2xl font-bold text-gray-800"
+            ></h2>
+          </div>
           <button
-            id="favoriteBtn"
-            class="text-3xl transition-colors hover:scale-110"
-          ></button>
+            onclick="closeModal()"
+            class="text-3xl leading-none text-gray-400 hover:text-gray-600"
+          >
+            ×
+          </button>
         </div>
 
         <div class="p-6">
@@ -201,7 +208,7 @@
             ></div>
           </div>
 
-          <div class="px-6 py-4 flex justify-center md:justify-end">
+          <div class="px-6 py-4 flex justify-center md:hidden">
             <button
               onclick="closeModal()"
               class="px-10 py-3 bg-gray-100 hover:bg-gray-200 rounded-2xl font-medium transition"
