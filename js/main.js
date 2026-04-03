@@ -234,13 +234,15 @@ async function initMapWithBorder(country) {
     initMap(
       country.latlng[0],
       country.latlng[1],
-      country.translations?.kor?.common,
+      country.translations?.kor?.common.replace("조선", "북한"),
     );
 
     if (!countriesGeoJSON) {
       await loadCountriesGeoJSON();
     }
-    highlightCountryBorderInModal(country.translations?.kor?.common);
+    highlightCountryBorderInModal(
+      country.translations?.kor?.common.replace("조선", "북한"),
+    );
   }
 }
 
