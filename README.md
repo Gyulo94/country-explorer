@@ -7,7 +7,7 @@
 
   <p>
     <a href="https://country-explorer.vercel.app/">
-      <img src="https://img.shields.io/badge/바로_체험하기-00C7B7?style=for-the-badge&logo=netlify&logoColor=white" alt="Live Demo">
+      <img src="https://img.shields.io/badge/바로_체험하기-black?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Demo">
     </a>
     &nbsp;
     <a href="https://github.com/gyulo94/country-explorer/stargazers">
