@@ -10,8 +10,8 @@
       <img src="https://img.shields.io/badge/바로_체험하기-00C7B7?style=for-the-badge&logo=netlify&logoColor=white" alt="Live Demo">
     </a>
     &nbsp;
-    <a href="https://github.com/gyucito/momentum/stargazers">
-      <img src="https://img.shields.io/github/stars/gyucito/momentum?style=for-the-badge" alt="GitHub stars">
+    <a href="https://github.com/gyulo94/country-explorer/stargazers">
+      <img src="https://img.shields.io/github/stars/gyulo94/country-explorer?style=for-the-badge" alt="GitHub stars">
     </a>
   </p>
   <br><br>
